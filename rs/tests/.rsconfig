@@ -1,0 +1,6 @@
+# Default startup script to create some common aliasses and variables
+run ../.rsconfig
+
+# The following are for tests
+alias BASEAPI "base http://api.ipify.org"
+alias FAKEAPI "base https://jsonplaceholder.typicode.com\"
