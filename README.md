@@ -37,4 +37,4 @@ All assertions should pass when the script completes.
 
 HELP command lists all the commands available and the Split IO commands start with 'split'.
 
-The 'ABOUT SplitIO' command provides additional informtion about using the commands.
+The 'ABOUT Split' command provides additional informtion about using the commands.
