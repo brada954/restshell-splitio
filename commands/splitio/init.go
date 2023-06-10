@@ -6,6 +6,7 @@ var splitCommandCategory = "SplitIO"
 
 func init() {
 	AddCommands()
+	shell.AddAboutTopic(NewSplitTopic())
 }
 
 func AddCommands() {
