@@ -18,7 +18,7 @@ var splitTopic = &SplitIOTopic{
 	Description: "Split I/O commands for access Split I/O Feature flags and configuration",
 	About: `Split I/O is a SAAS service with an API for accessing configuration. Applications
 make API calls to get the value of configuration settings during application runtime.
-The Split I/O commands allow restshell to qury the API to get the configuration directly
+The Split I/O commands allow restshell to query the API to get the configuration directly
 as an application.
 
 Use the SPLITCON command to make a connection to split. The command takes an API key as a 
