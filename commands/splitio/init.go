@@ -11,5 +11,6 @@ func init() {
 
 func AddCommands() {
 	shell.AddCommand("splitcon", splitCommandCategory, SplitConnectCommandFactory())
+	shell.AddCommand("splitclose", splitCommandCategory, SplitCloseCommandFactory())
 	shell.AddCommand("splitget", splitCommandCategory, SplitGetCommandFactory())
 }
