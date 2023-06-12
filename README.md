@@ -1,6 +1,6 @@
-# Restshell SplitIO
+# Restshell Split.io
 
-Commands to be included with Restshell to access Split IO configurations
+Commands to be included with Restshell to access Split.io configurations
 
 ## Build instructions
 
@@ -9,14 +9,14 @@ cd rs
 go build
 ```
 
-The build produces a new restshell called rs.exe (or rs) which includes all the base functionality of restshell with the Split IO commands loaded. You can rename the directory to any name for your executable.
+The build produces a new restshell called rs.exe (or rs) which includes all the base functionality of restshell with the Split.io commands loaded. You can rename the directory to any name for your executable.
 
 Run the following to see the help command
 
 ```bash
 rs help
 ```
-Note: a alternative restshell branch can be created that references the modules in this repository
+As an alternative a restshell fork can be created with references to the commands in this repository
 
 ## Tests
 
@@ -33,8 +33,8 @@ cd tests
 
 All assertions should pass when the script completes.
 
-## Split IO Commands
+## Split.io Commands
 
-HELP command lists all the commands available and the Split IO commands start with 'split'.
+HELP command lists all the commands available and the Split.io commands start with 'split'.
 
 The 'ABOUT Split' command provides additional informtion about using the commands.
