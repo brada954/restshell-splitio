@@ -14,28 +14,30 @@ type SplitIOTopic struct {
 
 var splitTopic = &SplitIOTopic{
 	Key:         "SPLIT",
-	Title:       "Split I/O",
-	Description: "Split I/O commands for access Split I/O Feature flags and configuration",
-	About: `Split I/O is a SAAS service with an API for accessing configuration. Applications
+	Title:       "Split.io",
+	Description: "Split commands for access Split.io Feature flags and configuration",
+	About: `Split.io is a SAAS service with an API for accessing configuration. Applications
 make API calls to get the value of configuration settings during application runtime.
-The Split I/O commands allow restshell to query the API to get the configuration directly
+The Split commands allow restshell to query the API to get the configuration directly
 as an application.
 
-Use the SPLITCON command to make a connection to split. The command takes an API key as a 
-parameter:
+Connect to Split using the SPLITCON command maintains the connection until closed.
 
 	SPLITCON my_api_key
 
-The SPLITGET command can query the value of the Treatment (i.e. on, off, etc) or with options
-query the configuration. 
+SPLITCON will get a default API key from the configuration variable 'SPLITIO_API_KEY' if not
+specified with the command.
 
-    SPLITGET --with-config enableMyWidgetFeature
+Get Split I/O treatments or configurations with the SPLITGET command:
 
-When the split configuration is JSON it will be stored as a result and can be interogated
-like any other JSON REST response.
+    SPLITGET --with-config my_split_name
 
-The SPLITDISC command disconnects the Split I/O client. Once the split is connected, the 
-client connection stays open as an application would use Split I/O
+Attributes can be provided as paramters for targeting rules. The split configuration is
+stored as a result and can be interogated like any other JSON response.
+
+Close the Split.io connection with the SPLITCLOSE command:
+
+	SPLITCLOSE
 `,
 }
 
